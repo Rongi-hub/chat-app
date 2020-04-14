@@ -25,7 +25,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <h1>Chat app</h1>
+        <h1>Chat App</h1>
         <Chatbox items={this.state.items} />
         <form className="nessage-form" onSubmit={this.onSubmit}>
           <input value={this.state.term} onChange={this.onChange} />

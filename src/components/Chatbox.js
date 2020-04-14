@@ -1,4 +1,5 @@
 import React from 'react';
+import './Chatbox.css';
 
 const Chatbox = props => (
   <ul>
