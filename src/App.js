@@ -34,7 +34,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <h1>Chat App</h1>
+        <h1>NaKNaK</h1>
 
         {this.props.user &&
           <div className="allow-chat">
@@ -53,7 +53,7 @@ class App extends React.Component {
         }
         {!this.props.user &&
           <div className="disallow-chat">
-            <p><Link to="/login">Login</Link> or <Link to="/register">Register</Link> Register</p>
+            <p><Link to="/login">Login</Link> or <Link to="/register">Register</Link> to start chatting!</p>
           </div>
         }
       </div>

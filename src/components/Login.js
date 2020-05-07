@@ -32,21 +32,30 @@ class Login extends React.Component{
         <h1>Login</h1>
         <p>Login to access your account</p>
         {error && <p className="error-message">{error.message}</p>}
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="email">Email address</label>
-          <input type="text" name="email" id="email" value={email} onChange={this.handleChange}></input>
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            value={password}
-            onChange={this.handleChange}
-            >
-            </input>
-          <button className="submit">Login</button>
-          <p>Don't have an account? <Link className="login-btn" to="/register">Register here</Link>.</p>
-        </form>
+        <div className="container">
+          <div className="row justify-content-center">
+            <form className="col-6" onSubmit={this.handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="email">Email address</label>
+                <input className="form-control" type="text" name="email" id="email" value={email} onChange={this.handleChange}></input>
+              </div>
+              <div className="form-group">
+                <label htmlFor="password">Password</label>
+                <input
+                  className="form-control"
+                  type="password"
+                  name="password"
+                  id="password"
+                  value={password}
+                  onChange={this.handleChange}
+                  >
+                  </input>
+              </div>
+              <button type="submit" className="submit btn btn-outline-primary">Login</button>
+              <p>Don't have an account?<br></br><Link className="login-btn" to="/register">Register here!</Link></p>
+            </form>
+          </div>
+        </div>
       </div>
     );
   }
