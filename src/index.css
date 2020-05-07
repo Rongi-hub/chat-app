@@ -41,14 +41,14 @@ a:hover {
 h1 {
   color: coral;
   background-color: white;
-  margin: 0px 50px 90px 50px;
+  margin: 0px 50px 70px 50px;
   border: dashed 115px papayawhip;
   font-size: 10vw;
   padding: 20px 0 30px 0;
 }
 
 p {
-  margin: 30px 0px 30px 0px;
+  margin: 40px 0;
   font-weight: 500;
   font-size: larger;
   color: dimgray;
@@ -82,8 +82,8 @@ form {
   margin-bottom: 50px;
 }
 
-.form-control {
-  background-color: papayawhip;
+label {
+ color: dimgray;
 }
 
 
@@ -96,6 +96,10 @@ input:-webkit-autofill:active  {
 
 input:-webkit-autofill {
   -webkit-text-fill-color: dimgray !important;
+}
+
+.chat-list {
+  color: dimgray;
 }
 
 @media (max-width: 575.98px) { 

@@ -35,22 +35,30 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>NaKNaK</h1>
-
-        {this.props.user &&
-          <div className="allow-chat">
-            <Chatbox />
-            <form className="nessage-form" onSubmit={this.onSubmit}>
-            <input 
-            type="text"
-            name="message"
-            id="message"
-            value={this.state.message}
-            placeholder="Enter a message..."
-            onChange={this.onChange} />
-            <button>Send</button>
-            </form>
-           </div>
-        }
+        <div class="container">
+          {this.props.user &&
+            <div className="allow-chat">
+              <div className="row justify-content-center">
+                <Chatbox />
+              </div>
+              <div className="row justify-content-center">
+                <form className="nessage-form col-6" onSubmit={this.onSubmit}>
+                  <div className="input-group">
+                    <input 
+                    className="form-control"
+                    type="text"
+                    name="message"
+                    id="message"
+                    value={this.state.message}
+                    placeholder="Enter a message..."
+                    onChange={this.onChange} />
+                    <button className="btn btn-outline-secondary" type="button">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          }
+        </div> 
         {!this.props.user &&
           <div className="disallow-chat">
             <p><Link to="/login">Login</Link> or <Link to="/register">Register</Link> to start chatting!</p>

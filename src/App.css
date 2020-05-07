@@ -24,6 +24,19 @@
   color: white;
 }
 
+.btn-outline-secondary {
+  color: coral;
+  border-color: coral;
+}
+
+.btn-outline-secondary:hover {
+  color: #fff;
+  background-color: coral;
+  border-color: coral;
+}
+
+
+
 .App-link {
   color: #61dafb;
 }

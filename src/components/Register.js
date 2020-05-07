@@ -44,15 +44,16 @@ class Register extends React.Component{
             <form className="col-6" onSubmit={this.handleSubmit}>
               <div className="form-group">
                 <label htmlFor="username">Username</label>
-                <input tyle="text" name="username" id="username" value={username} onChange={this.handleChange}></input>
+                <input className="form-control" tyle="text" name="username" id="username" value={username} onChange={this.handleChange}></input>
               </div>
               <div className="form-group">
                 <label htmlFor="email">Email address</label>
-                <input type="text" name="email" id="email" value={email} onChange={this.handleChange}></input>
+                <input className="form-control" type="text" name="email" id="email" value={email} onChange={this.handleChange}></input>
               </div>
               <div className="form-group">
                 <label htmlFor="password">Choose a password</label>
                 <input
+                  className="form-control"
                   type="password"
                   name="password"
                   id="password"
@@ -61,8 +62,8 @@ class Register extends React.Component{
                   >
                 </input>
               </div>
-              <button className="submit">Get started</button>
-              <p>Already have an account? <Link className="login-btn" to="/login">Login here</Link></p>
+              <button className="submit btn btn-outline-primary">Get started</button>
+              <p>Already have an account? <br></br><Link className="login-btn" to="/login">Login here</Link></p>
             </form>
           </div>
         </div>  
