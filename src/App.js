@@ -17,6 +17,7 @@ class App extends React.Component {
   
   onSubmit = (event) => {
     event.preventDefault()
+
     if(this.state.message !== ''){
       const chatRef = firebase.database().ref('general');
       const chat = {
@@ -24,7 +25,7 @@ class App extends React.Component {
         user:this.props.user.displayName,
         timestamp: new Date().getTime()
       }
-
+      console.log(chat);
       chatRef.push(chat);
       this.setState({message:''});
     }
@@ -35,7 +36,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>NaKNaK</h1>
-        <div class="container">
+        <div className="container">
           {this.props.user &&
             <div className="allow-chat">
               <div className="row justify-content-center">
@@ -52,7 +53,7 @@ class App extends React.Component {
                     value={this.state.message}
                     placeholder="Enter a message..."
                     onChange={this.onChange} />
-                    <button className="btn btn-outline-secondary" type="button">Send</button>
+                    <button className="btn btn-outline-secondary" type="submit">Send</button>
                   </div>
                 </form>
               </div>

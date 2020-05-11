@@ -26,7 +26,7 @@ a{
 }
 
 a:hover {
-  color: rgb(0, 139, 139);
+  color: rgb(0, 173, 173);
   text-decoration: underline;
 }
 
@@ -42,8 +42,8 @@ h1 {
   color: coral;
   background-color: white;
   margin: 0px 50px 70px 50px;
-  border: dashed 115px papayawhip;
-  font-size: 10vw;
+  border: dashed 110px papayawhip;
+  font-size: 6vw;
   padding: 20px 0 30px 0;
 }
 
@@ -51,7 +51,7 @@ p {
   margin: 40px 0;
   font-weight: 500;
   font-size: larger;
-  color: dimgray;
+  color: rgb(65, 65, 65);
 }
 
 .btn-outline-primary {
@@ -73,17 +73,21 @@ p {
 }
 
 .form-control:focus {
-  color: #495057;
+  color: rgb(65, 65, 65);
   background-color: #fff;
   border-color: coral;
 }
 
+/* .form-control {
+  border: 1px solid rgb(163, 163, 163);
+} */
 form {
   margin-bottom: 50px;
 }
 
 label {
- color: dimgray;
+font-weight: 500;
+color: rgb(65, 65, 65);
 }
 
 
@@ -95,12 +99,28 @@ input:-webkit-autofill:active  {
 }
 
 input:-webkit-autofill {
-  -webkit-text-fill-color: dimgray !important;
+  -webkit-text-fill-color: rgb(65, 65, 65) !important;
+}
+.chat-list {
+  color: rgb(65, 65, 65);
 }
 
-.chat-list {
-  color: dimgray;
+.chat-list .col-1 {
+  text-align: center;
 }
+
+.chat-list strong {
+  color:coral;
+}
+
+.chat-list li{
+  text-align: start;
+}
+
+.chatMessage {
+  margin-bottom: 10px;
+}
+
 
 @media (max-width: 575.98px) { 
 
